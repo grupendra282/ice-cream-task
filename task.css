@@ -1,0 +1,362 @@
+```css
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Pacifico&display=swap');
+
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf5;
+    color: #49312e;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    padding: 20px 8%;
+    text-align: center;
+}
+
+header h1 {
+    color: #e75480;
+    font-family: 'Pacifico', cursive;
+    font-size: 38px;
+}
+
+header p {
+    color: #8b6f69;
+    margin-bottom: 15px;
+}
+
+/* Navigation */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #49312e;
+    font-weight: 600;
+    margin: 5px 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #e75480;
+    color: white;
+}
+
+/* Horizontal Lines */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #f3d7d9;
+    margin: 25px 0;
+}
+
+/* Hero Section */
+#home {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #ffe0e9, #fff0d9);
+}
+
+#home h1 {
+    font-size: 46px;
+    color: #c73569;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    font-size: 27px;
+    color: #69423d;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+#home img {
+    width: 80%;
+    max-width: 650px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(90, 40, 40, 0.15);
+    margin-top: 15px;
+}
+
+/* Explore Button */
+#home a {
+    display: inline-block;
+    background-color: #e75480;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#home a:hover {
+    background-color: #b92e5a;
+    transform: translateY(-3px);
+}
+
+/* Flavors Section */
+#flavors {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+#flavors > h1 {
+    font-size: 36px;
+    color: #d94676;
+    margin-bottom: 15px;
+}
+
+#flavors > p {
+    color: #806b65;
+    margin-bottom: 35px;
+}
+
+/* Ice Cream Cards */
+#flavors article {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-width: 250px;
+    max-width: 350px;
+    background-color: white;
+    margin: 15px 1%;
+    padding: 20px;
+    border-radius: 22px;
+    box-shadow: 0 6px 25px rgba(100, 55, 55, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#flavors article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(180, 70, 110, 0.18);
+}
+
+#flavors article h2 {
+    color: #a83e61;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+#flavors article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#flavors article p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+#flavors article p strong {
+    display: inline-block;
+    color: #d94676;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* Order Now Button */
+button {
+    background: linear-gradient(135deg, #ff719a, #e64276);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #b92e5a;
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    background: linear-gradient(135deg, #fff0e4, #ffe1e8);
+    text-align: center;
+    padding: 60px 10%;
+    border-radius: 25px;
+    margin: 30px 5%;
+}
+
+#about h1 {
+    color: #d94676;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+#about h3 {
+    color: #a83e61;
+    margin: 25px 0 10px;
+    font-size: 23px;
+}
+
+#about ul {
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#about li {
+    padding: 5px 0;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 55px 20px;
+    background-color: #ffffff;
+}
+
+#contact h1 {
+    color: #d94676;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #492d35;
+    color: #fff0f4;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h2 {
+    font-family: 'Pacifico', cursive;
+    color: #ff9cba;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    display: inline-block;
+    color: #ffe0e9;
+    text-decoration: none;
+    margin: 5px 10px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ff8db2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        margin: 4px;
+        padding: 7px 9px;
+        font-size: 14px;
+    }
+
+    #home {
+        padding: 45px 15px;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    #home h2 {
+        font-size: 22px;
+    }
+
+    #home img {
+        width: 100%;
+        height: 250px;
+    }
+
+    #flavors {
+        padding: 40px 10px;
+    }
+
+    #flavors > h1 {
+        font-size: 28px;
+    }
+
+    #flavors article {
+        width: 90%;
+        max-width: 380px;
+        margin: 15px auto;
+    }
+
+    #about {
+        padding: 40px 20px;
+        margin: 20px 10px;
+    }
+
+    #about h1,
+    #contact h1 {
+        font-size: 28px;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 400px) {
+
+    #home h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: 2px;
+    }
+
+    #flavors article {
+        min-width: 0;
+        width: 100%;
+        margin: 12px 0;
+    }
+}
+```
